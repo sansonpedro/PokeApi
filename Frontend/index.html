@@ -1,14 +1,1881 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokedéx</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  h1
 
-  <script src="script.js"></script> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+
+
+<body>
+
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png"
+            style="width: 20vw; margin: 2vh;">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar por nome ou número">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+
+    <main id="pokedex-container">
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                alt="bulbasaur">
+            <p class="pokemon-id">#001</p>
+            <h3 class="pokemon-name">bulbasaur</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+                alt="ivysaur">
+            <p class="pokemon-id">#002</p>
+            <h3 class="pokemon-name">ivysaur</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+                alt="venusaur">
+            <p class="pokemon-id">#003</p>
+            <h3 class="pokemon-name">venusaur</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+                alt="charmander">
+            <p class="pokemon-id">#004</p>
+            <h3 class="pokemon-name">charmander</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
+                alt="charmeleon">
+            <p class="pokemon-id">#005</p>
+            <h3 class="pokemon-name">charmeleon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+                alt="charizard">
+            <p class="pokemon-id">#006</p>
+            <h3 class="pokemon-name">charizard</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+                alt="squirtle">
+            <p class="pokemon-id">#007</p>
+            <h3 class="pokemon-name">squirtle</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
+                alt="wartortle">
+            <p class="pokemon-id">#008</p>
+            <h3 class="pokemon-name">wartortle</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+                alt="blastoise">
+            <p class="pokemon-id">#009</p>
+            <h3 class="pokemon-name">blastoise</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
+                alt="caterpie">
+            <p class="pokemon-id">#010</p>
+            <h3 class="pokemon-name">caterpie</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
+                alt="metapod">
+            <p class="pokemon-id">#011</p>
+            <h3 class="pokemon-name">metapod</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
+                alt="butterfree">
+            <p class="pokemon-id">#012</p>
+            <h3 class="pokemon-name">butterfree</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png"
+                alt="weedle">
+            <p class="pokemon-id">#013</p>
+            <h3 class="pokemon-name">weedle</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png"
+                alt="kakuna">
+            <p class="pokemon-id">#014</p>
+            <h3 class="pokemon-name">kakuna</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png"
+                alt="beedrill">
+            <p class="pokemon-id">#015</p>
+            <h3 class="pokemon-name">beedrill</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png"
+                alt="pidgey">
+            <p class="pokemon-id">#016</p>
+            <h3 class="pokemon-name">pidgey</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
+                alt="pidgeotto">
+            <p class="pokemon-id">#017</p>
+            <h3 class="pokemon-name">pidgeotto</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png"
+                alt="pidgeot">
+            <p class="pokemon-id">#018</p>
+            <h3 class="pokemon-name">pidgeot</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
+                alt="rattata">
+            <p class="pokemon-id">#019</p>
+            <h3 class="pokemon-name">rattata</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png"
+                alt="raticate">
+            <p class="pokemon-id">#020</p>
+            <h3 class="pokemon-name">raticate</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+                alt="spearow">
+            <p class="pokemon-id">#021</p>
+            <h3 class="pokemon-name">spearow</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png"
+                alt="fearow">
+            <p class="pokemon-id">#022</p>
+            <h3 class="pokemon-name">fearow</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
+                alt="ekans">
+            <p class="pokemon-id">#023</p>
+            <h3 class="pokemon-name">ekans</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png"
+                alt="arbok">
+            <p class="pokemon-id">#024</p>
+            <h3 class="pokemon-name">arbok</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                alt="pikachu">
+            <p class="pokemon-id">#025</p>
+            <h3 class="pokemon-name">pikachu</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+                alt="raichu">
+            <p class="pokemon-id">#026</p>
+            <h3 class="pokemon-name">raichu</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png"
+                alt="sandshrew">
+            <p class="pokemon-id">#027</p>
+            <h3 class="pokemon-name">sandshrew</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png"
+                alt="sandslash">
+            <p class="pokemon-id">#028</p>
+            <h3 class="pokemon-name">sandslash</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+                alt="nidoran-f">
+            <p class="pokemon-id">#029</p>
+            <h3 class="pokemon-name">nidoran-f</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+                alt="nidorina">
+            <p class="pokemon-id">#030</p>
+            <h3 class="pokemon-name">nidorina</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
+                alt="nidoqueen">
+            <p class="pokemon-id">#031</p>
+            <h3 class="pokemon-name">nidoqueen</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png"
+                alt="nidoran-m">
+            <p class="pokemon-id">#032</p>
+            <h3 class="pokemon-name">nidoran-m</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png"
+                alt="nidorino">
+            <p class="pokemon-id">#033</p>
+            <h3 class="pokemon-name">nidorino</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+                alt="nidoking">
+            <p class="pokemon-id">#034</p>
+            <h3 class="pokemon-name">nidoking</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png"
+                alt="clefairy">
+            <p class="pokemon-id">#035</p>
+            <h3 class="pokemon-name">clefairy</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+                alt="clefable">
+            <p class="pokemon-id">#036</p>
+            <h3 class="pokemon-name">clefable</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png"
+                alt="vulpix">
+            <p class="pokemon-id">#037</p>
+            <h3 class="pokemon-name">vulpix</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
+                alt="ninetales">
+            <p class="pokemon-id">#038</p>
+            <h3 class="pokemon-name">ninetales</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png"
+                alt="jigglypuff">
+            <p class="pokemon-id">#039</p>
+            <h3 class="pokemon-name">jigglypuff</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png"
+                alt="wigglytuff">
+            <p class="pokemon-id">#040</p>
+            <h3 class="pokemon-name">wigglytuff</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png"
+                alt="zubat">
+            <p class="pokemon-id">#041</p>
+            <h3 class="pokemon-name">zubat</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png"
+                alt="golbat">
+            <p class="pokemon-id">#042</p>
+            <h3 class="pokemon-name">golbat</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png"
+                alt="oddish">
+            <p class="pokemon-id">#043</p>
+            <h3 class="pokemon-name">oddish</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
+                alt="gloom">
+            <p class="pokemon-id">#044</p>
+            <h3 class="pokemon-name">gloom</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
+                alt="vileplume">
+            <p class="pokemon-id">#045</p>
+            <h3 class="pokemon-name">vileplume</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
+                alt="paras">
+            <p class="pokemon-id">#046</p>
+            <h3 class="pokemon-name">paras</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png"
+                alt="parasect">
+            <p class="pokemon-id">#047</p>
+            <h3 class="pokemon-name">parasect</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png"
+                alt="venonat">
+            <p class="pokemon-id">#048</p>
+            <h3 class="pokemon-name">venonat</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png"
+                alt="venomoth">
+            <p class="pokemon-id">#049</p>
+            <h3 class="pokemon-name">venomoth</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png"
+                alt="diglett">
+            <p class="pokemon-id">#050</p>
+            <h3 class="pokemon-name">diglett</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png"
+                alt="dugtrio">
+            <p class="pokemon-id">#051</p>
+            <h3 class="pokemon-name">dugtrio</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
+                alt="meowth">
+            <p class="pokemon-id">#052</p>
+            <h3 class="pokemon-name">meowth</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png"
+                alt="persian">
+            <p class="pokemon-id">#053</p>
+            <h3 class="pokemon-name">persian</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png"
+                alt="psyduck">
+            <p class="pokemon-id">#054</p>
+            <h3 class="pokemon-name">psyduck</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png"
+                alt="golduck">
+            <p class="pokemon-id">#055</p>
+            <h3 class="pokemon-name">golduck</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png"
+                alt="mankey">
+            <p class="pokemon-id">#056</p>
+            <h3 class="pokemon-name">mankey</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png"
+                alt="primeape">
+            <p class="pokemon-id">#057</p>
+            <h3 class="pokemon-name">primeape</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+                alt="growlithe">
+            <p class="pokemon-id">#058</p>
+            <h3 class="pokemon-name">growlithe</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
+                alt="arcanine">
+            <p class="pokemon-id">#059</p>
+            <h3 class="pokemon-name">arcanine</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png"
+                alt="poliwag">
+            <p class="pokemon-id">#060</p>
+            <h3 class="pokemon-name">poliwag</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png"
+                alt="poliwhirl">
+            <p class="pokemon-id">#061</p>
+            <h3 class="pokemon-name">poliwhirl</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png"
+                alt="poliwrath">
+            <p class="pokemon-id">#062</p>
+            <h3 class="pokemon-name">poliwrath</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png"
+                alt="abra">
+            <p class="pokemon-id">#063</p>
+            <h3 class="pokemon-name">abra</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png"
+                alt="kadabra">
+            <p class="pokemon-id">#064</p>
+            <h3 class="pokemon-name">kadabra</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+                alt="alakazam">
+            <p class="pokemon-id">#065</p>
+            <h3 class="pokemon-name">alakazam</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png"
+                alt="machop">
+            <p class="pokemon-id">#066</p>
+            <h3 class="pokemon-name">machop</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png"
+                alt="machoke">
+            <p class="pokemon-id">#067</p>
+            <h3 class="pokemon-name">machoke</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png"
+                alt="machamp">
+            <p class="pokemon-id">#068</p>
+            <h3 class="pokemon-name">machamp</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png"
+                alt="bellsprout">
+            <p class="pokemon-id">#069</p>
+            <h3 class="pokemon-name">bellsprout</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png"
+                alt="weepinbell">
+            <p class="pokemon-id">#070</p>
+            <h3 class="pokemon-name">weepinbell</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+                alt="victreebel">
+            <p class="pokemon-id">#071</p>
+            <h3 class="pokemon-name">victreebel</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png"
+                alt="tentacool">
+            <p class="pokemon-id">#072</p>
+            <h3 class="pokemon-name">tentacool</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png"
+                alt="tentacruel">
+            <p class="pokemon-id">#073</p>
+            <h3 class="pokemon-name">tentacruel</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png"
+                alt="geodude">
+            <p class="pokemon-id">#074</p>
+            <h3 class="pokemon-name">geodude</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png"
+                alt="graveler">
+            <p class="pokemon-id">#075</p>
+            <h3 class="pokemon-name">graveler</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png"
+                alt="golem">
+            <p class="pokemon-id">#076</p>
+            <h3 class="pokemon-name">golem</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
+                alt="ponyta">
+            <p class="pokemon-id">#077</p>
+            <h3 class="pokemon-name">ponyta</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
+                alt="rapidash">
+            <p class="pokemon-id">#078</p>
+            <h3 class="pokemon-name">rapidash</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png"
+                alt="slowpoke">
+            <p class="pokemon-id">#079</p>
+            <h3 class="pokemon-name">slowpoke</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png"
+                alt="slowbro">
+            <p class="pokemon-id">#080</p>
+            <h3 class="pokemon-name">slowbro</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png"
+                alt="magnemite">
+            <p class="pokemon-id">#081</p>
+            <h3 class="pokemon-name">magnemite</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png"
+                alt="magneton">
+            <p class="pokemon-id">#082</p>
+            <h3 class="pokemon-name">magneton</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
+                alt="farfetchd">
+            <p class="pokemon-id">#083</p>
+            <h3 class="pokemon-name">farfetchd</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png"
+                alt="doduo">
+            <p class="pokemon-id">#084</p>
+            <h3 class="pokemon-name">doduo</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png"
+                alt="dodrio">
+            <p class="pokemon-id">#085</p>
+            <h3 class="pokemon-name">dodrio</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png"
+                alt="seel">
+            <p class="pokemon-id">#086</p>
+            <h3 class="pokemon-name">seel</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png"
+                alt="dewgong">
+            <p class="pokemon-id">#087</p>
+            <h3 class="pokemon-name">dewgong</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png"
+                alt="grimer">
+            <p class="pokemon-id">#088</p>
+            <h3 class="pokemon-name">grimer</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png"
+                alt="muk">
+            <p class="pokemon-id">#089</p>
+            <h3 class="pokemon-name">muk</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png"
+                alt="shellder">
+            <p class="pokemon-id">#090</p>
+            <h3 class="pokemon-name">shellder</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png"
+                alt="cloyster">
+            <p class="pokemon-id">#091</p>
+            <h3 class="pokemon-name">cloyster</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+                alt="gastly">
+            <p class="pokemon-id">#092</p>
+            <h3 class="pokemon-name">gastly</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png"
+                alt="haunter">
+            <p class="pokemon-id">#093</p>
+            <h3 class="pokemon-name">haunter</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+                alt="gengar">
+            <p class="pokemon-id">#094</p>
+            <h3 class="pokemon-name">gengar</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png"
+                alt="onix">
+            <p class="pokemon-id">#095</p>
+            <h3 class="pokemon-name">onix</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png"
+                alt="drowzee">
+            <p class="pokemon-id">#096</p>
+            <h3 class="pokemon-name">drowzee</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png"
+                alt="hypno">
+            <p class="pokemon-id">#097</p>
+            <h3 class="pokemon-name">hypno</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png"
+                alt="krabby">
+            <p class="pokemon-id">#098</p>
+            <h3 class="pokemon-name">krabby</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png"
+                alt="kingler">
+            <p class="pokemon-id">#099</p>
+            <h3 class="pokemon-name">kingler</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png"
+                alt="voltorb">
+            <p class="pokemon-id">#100</p>
+            <h3 class="pokemon-name">voltorb</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png"
+                alt="electrode">
+            <p class="pokemon-id">#101</p>
+            <h3 class="pokemon-name">electrode</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png"
+                alt="exeggcute">
+            <p class="pokemon-id">#102</p>
+            <h3 class="pokemon-name">exeggcute</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png"
+                alt="exeggutor">
+            <p class="pokemon-id">#103</p>
+            <h3 class="pokemon-name">exeggutor</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png"
+                alt="cubone">
+            <p class="pokemon-id">#104</p>
+            <h3 class="pokemon-name">cubone</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png"
+                alt="marowak">
+            <p class="pokemon-id">#105</p>
+            <h3 class="pokemon-name">marowak</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png"
+                alt="hitmonlee">
+            <p class="pokemon-id">#106</p>
+            <h3 class="pokemon-name">hitmonlee</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png"
+                alt="hitmonchan">
+            <p class="pokemon-id">#107</p>
+            <h3 class="pokemon-name">hitmonchan</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png"
+                alt="lickitung">
+            <p class="pokemon-id">#108</p>
+            <h3 class="pokemon-name">lickitung</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png"
+                alt="koffing">
+            <p class="pokemon-id">#109</p>
+            <h3 class="pokemon-name">koffing</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png"
+                alt="weezing">
+            <p class="pokemon-id">#110</p>
+            <h3 class="pokemon-name">weezing</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png"
+                alt="rhyhorn">
+            <p class="pokemon-id">#111</p>
+            <h3 class="pokemon-name">rhyhorn</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png"
+                alt="rhydon">
+            <p class="pokemon-id">#112</p>
+            <h3 class="pokemon-name">rhydon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png"
+                alt="chansey">
+            <p class="pokemon-id">#113</p>
+            <h3 class="pokemon-name">chansey</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png"
+                alt="tangela">
+            <p class="pokemon-id">#114</p>
+            <h3 class="pokemon-name">tangela</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
+                alt="kangaskhan">
+            <p class="pokemon-id">#115</p>
+            <h3 class="pokemon-name">kangaskhan</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png"
+                alt="horsea">
+            <p class="pokemon-id">#116</p>
+            <h3 class="pokemon-name">horsea</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png"
+                alt="seadra">
+            <p class="pokemon-id">#117</p>
+            <h3 class="pokemon-name">seadra</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
+                alt="goldeen">
+            <p class="pokemon-id">#118</p>
+            <h3 class="pokemon-name">goldeen</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
+                alt="seaking">
+            <p class="pokemon-id">#119</p>
+            <h3 class="pokemon-name">seaking</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
+                alt="staryu">
+            <p class="pokemon-id">#120</p>
+            <h3 class="pokemon-name">staryu</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
+                alt="starmie">
+            <p class="pokemon-id">#121</p>
+            <h3 class="pokemon-name">starmie</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png"
+                alt="mr-mime">
+            <p class="pokemon-id">#122</p>
+            <h3 class="pokemon-name">mr-mime</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png"
+                alt="scyther">
+            <p class="pokemon-id">#123</p>
+            <h3 class="pokemon-name">scyther</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png"
+                alt="jynx">
+            <p class="pokemon-id">#124</p>
+            <h3 class="pokemon-name">jynx</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png"
+                alt="electabuzz">
+            <p class="pokemon-id">#125</p>
+            <h3 class="pokemon-name">electabuzz</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png"
+                alt="magmar">
+            <p class="pokemon-id">#126</p>
+            <h3 class="pokemon-name">magmar</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png"
+                alt="pinsir">
+            <p class="pokemon-id">#127</p>
+            <h3 class="pokemon-name">pinsir</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png"
+                alt="tauros">
+            <p class="pokemon-id">#128</p>
+            <h3 class="pokemon-name">tauros</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png"
+                alt="magikarp">
+            <p class="pokemon-id">#129</p>
+            <h3 class="pokemon-name">magikarp</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+                alt="gyarados">
+            <p class="pokemon-id">#130</p>
+            <h3 class="pokemon-name">gyarados</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+                alt="lapras">
+            <p class="pokemon-id">#131</p>
+            <h3 class="pokemon-name">lapras</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+                alt="ditto">
+            <p class="pokemon-id">#132</p>
+            <h3 class="pokemon-name">ditto</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
+                alt="eevee">
+            <p class="pokemon-id">#133</p>
+            <h3 class="pokemon-name">eevee</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+                alt="vaporeon">
+            <p class="pokemon-id">#134</p>
+            <h3 class="pokemon-name">vaporeon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
+                alt="jolteon">
+            <p class="pokemon-id">#135</p>
+            <h3 class="pokemon-name">jolteon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
+                alt="flareon">
+            <p class="pokemon-id">#136</p>
+            <h3 class="pokemon-name">flareon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png"
+                alt="porygon">
+            <p class="pokemon-id">#137</p>
+            <h3 class="pokemon-name">porygon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png"
+                alt="omanyte">
+            <p class="pokemon-id">#138</p>
+            <h3 class="pokemon-name">omanyte</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png"
+                alt="omastar">
+            <p class="pokemon-id">#139</p>
+            <h3 class="pokemon-name">omastar</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png"
+                alt="kabuto">
+            <p class="pokemon-id">#140</p>
+            <h3 class="pokemon-name">kabuto</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png"
+                alt="kabutops">
+            <p class="pokemon-id">#141</p>
+            <h3 class="pokemon-name">kabutops</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+                alt="aerodactyl">
+            <p class="pokemon-id">#142</p>
+            <h3 class="pokemon-name">aerodactyl</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+                alt="snorlax">
+            <p class="pokemon-id">#143</p>
+            <h3 class="pokemon-name">snorlax</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
+                alt="articuno">
+            <p class="pokemon-id">#144</p>
+            <h3 class="pokemon-name">articuno</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+                alt="zapdos">
+            <p class="pokemon-id">#145</p>
+            <h3 class="pokemon-name">zapdos</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
+                alt="moltres">
+            <p class="pokemon-id">#146</p>
+            <h3 class="pokemon-name">moltres</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+                alt="dratini">
+            <p class="pokemon-id">#147</p>
+            <h3 class="pokemon-name">dratini</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+                alt="dragonair">
+            <p class="pokemon-id">#148</p>
+            <h3 class="pokemon-name">dragonair</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+                alt="dragonite">
+            <p class="pokemon-id">#149</p>
+            <h3 class="pokemon-name">dragonite</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+                alt="mewtwo">
+            <p class="pokemon-id">#150</p>
+            <h3 class="pokemon-name">mewtwo</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+                alt="mew">
+            <p class="pokemon-id">#151</p>
+            <h3 class="pokemon-name">mew</h3>
+        </div>
+    </main>
+
+
+    <script src="server.js"></script>
 </body>
+
+
 </html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+
+
+<body>
+
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png"
+            style="width: 20vw; margin: 2vh;">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar por nome ou número">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+
+    <main id="pokedex-container">
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                alt="bulbasaur">
+            <p class="pokemon-id">#001</p>
+            <h3 class="pokemon-name">bulbasaur</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+                alt="ivysaur">
+            <p class="pokemon-id">#002</p>
+            <h3 class="pokemon-name">ivysaur</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+                alt="venusaur">
+            <p class="pokemon-id">#003</p>
+            <h3 class="pokemon-name">venusaur</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+                alt="charmander">
+            <p class="pokemon-id">#004</p>
+            <h3 class="pokemon-name">charmander</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
+                alt="charmeleon">
+            <p class="pokemon-id">#005</p>
+            <h3 class="pokemon-name">charmeleon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+                alt="charizard">
+            <p class="pokemon-id">#006</p>
+            <h3 class="pokemon-name">charizard</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+                alt="squirtle">
+            <p class="pokemon-id">#007</p>
+            <h3 class="pokemon-name">squirtle</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
+                alt="wartortle">
+            <p class="pokemon-id">#008</p>
+            <h3 class="pokemon-name">wartortle</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+                alt="blastoise">
+            <p class="pokemon-id">#009</p>
+            <h3 class="pokemon-name">blastoise</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
+                alt="caterpie">
+            <p class="pokemon-id">#010</p>
+            <h3 class="pokemon-name">caterpie</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
+                alt="metapod">
+            <p class="pokemon-id">#011</p>
+            <h3 class="pokemon-name">metapod</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
+                alt="butterfree">
+            <p class="pokemon-id">#012</p>
+            <h3 class="pokemon-name">butterfree</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png"
+                alt="weedle">
+            <p class="pokemon-id">#013</p>
+            <h3 class="pokemon-name">weedle</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png"
+                alt="kakuna">
+            <p class="pokemon-id">#014</p>
+            <h3 class="pokemon-name">kakuna</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png"
+                alt="beedrill">
+            <p class="pokemon-id">#015</p>
+            <h3 class="pokemon-name">beedrill</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png"
+                alt="pidgey">
+            <p class="pokemon-id">#016</p>
+            <h3 class="pokemon-name">pidgey</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
+                alt="pidgeotto">
+            <p class="pokemon-id">#017</p>
+            <h3 class="pokemon-name">pidgeotto</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png"
+                alt="pidgeot">
+            <p class="pokemon-id">#018</p>
+            <h3 class="pokemon-name">pidgeot</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
+                alt="rattata">
+            <p class="pokemon-id">#019</p>
+            <h3 class="pokemon-name">rattata</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png"
+                alt="raticate">
+            <p class="pokemon-id">#020</p>
+            <h3 class="pokemon-name">raticate</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+                alt="spearow">
+            <p class="pokemon-id">#021</p>
+            <h3 class="pokemon-name">spearow</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png"
+                alt="fearow">
+            <p class="pokemon-id">#022</p>
+            <h3 class="pokemon-name">fearow</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
+                alt="ekans">
+            <p class="pokemon-id">#023</p>
+            <h3 class="pokemon-name">ekans</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png"
+                alt="arbok">
+            <p class="pokemon-id">#024</p>
+            <h3 class="pokemon-name">arbok</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                alt="pikachu">
+            <p class="pokemon-id">#025</p>
+            <h3 class="pokemon-name">pikachu</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+                alt="raichu">
+            <p class="pokemon-id">#026</p>
+            <h3 class="pokemon-name">raichu</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png"
+                alt="sandshrew">
+            <p class="pokemon-id">#027</p>
+            <h3 class="pokemon-name">sandshrew</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png"
+                alt="sandslash">
+            <p class="pokemon-id">#028</p>
+            <h3 class="pokemon-name">sandslash</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+                alt="nidoran-f">
+            <p class="pokemon-id">#029</p>
+            <h3 class="pokemon-name">nidoran-f</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+                alt="nidorina">
+            <p class="pokemon-id">#030</p>
+            <h3 class="pokemon-name">nidorina</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
+                alt="nidoqueen">
+            <p class="pokemon-id">#031</p>
+            <h3 class="pokemon-name">nidoqueen</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png"
+                alt="nidoran-m">
+            <p class="pokemon-id">#032</p>
+            <h3 class="pokemon-name">nidoran-m</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png"
+                alt="nidorino">
+            <p class="pokemon-id">#033</p>
+            <h3 class="pokemon-name">nidorino</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+                alt="nidoking">
+            <p class="pokemon-id">#034</p>
+            <h3 class="pokemon-name">nidoking</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png"
+                alt="clefairy">
+            <p class="pokemon-id">#035</p>
+            <h3 class="pokemon-name">clefairy</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+                alt="clefable">
+            <p class="pokemon-id">#036</p>
+            <h3 class="pokemon-name">clefable</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png"
+                alt="vulpix">
+            <p class="pokemon-id">#037</p>
+            <h3 class="pokemon-name">vulpix</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
+                alt="ninetales">
+            <p class="pokemon-id">#038</p>
+            <h3 class="pokemon-name">ninetales</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png"
+                alt="jigglypuff">
+            <p class="pokemon-id">#039</p>
+            <h3 class="pokemon-name">jigglypuff</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png"
+                alt="wigglytuff">
+            <p class="pokemon-id">#040</p>
+            <h3 class="pokemon-name">wigglytuff</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png"
+                alt="zubat">
+            <p class="pokemon-id">#041</p>
+            <h3 class="pokemon-name">zubat</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png"
+                alt="golbat">
+            <p class="pokemon-id">#042</p>
+            <h3 class="pokemon-name">golbat</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png"
+                alt="oddish">
+            <p class="pokemon-id">#043</p>
+            <h3 class="pokemon-name">oddish</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
+                alt="gloom">
+            <p class="pokemon-id">#044</p>
+            <h3 class="pokemon-name">gloom</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
+                alt="vileplume">
+            <p class="pokemon-id">#045</p>
+            <h3 class="pokemon-name">vileplume</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
+                alt="paras">
+            <p class="pokemon-id">#046</p>
+            <h3 class="pokemon-name">paras</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png"
+                alt="parasect">
+            <p class="pokemon-id">#047</p>
+            <h3 class="pokemon-name">parasect</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png"
+                alt="venonat">
+            <p class="pokemon-id">#048</p>
+            <h3 class="pokemon-name">venonat</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png"
+                alt="venomoth">
+            <p class="pokemon-id">#049</p>
+            <h3 class="pokemon-name">venomoth</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png"
+                alt="diglett">
+            <p class="pokemon-id">#050</p>
+            <h3 class="pokemon-name">diglett</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png"
+                alt="dugtrio">
+            <p class="pokemon-id">#051</p>
+            <h3 class="pokemon-name">dugtrio</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
+                alt="meowth">
+            <p class="pokemon-id">#052</p>
+            <h3 class="pokemon-name">meowth</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png"
+                alt="persian">
+            <p class="pokemon-id">#053</p>
+            <h3 class="pokemon-name">persian</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png"
+                alt="psyduck">
+            <p class="pokemon-id">#054</p>
+            <h3 class="pokemon-name">psyduck</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png"
+                alt="golduck">
+            <p class="pokemon-id">#055</p>
+            <h3 class="pokemon-name">golduck</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png"
+                alt="mankey">
+            <p class="pokemon-id">#056</p>
+            <h3 class="pokemon-name">mankey</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png"
+                alt="primeape">
+            <p class="pokemon-id">#057</p>
+            <h3 class="pokemon-name">primeape</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+                alt="growlithe">
+            <p class="pokemon-id">#058</p>
+            <h3 class="pokemon-name">growlithe</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
+                alt="arcanine">
+            <p class="pokemon-id">#059</p>
+            <h3 class="pokemon-name">arcanine</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png"
+                alt="poliwag">
+            <p class="pokemon-id">#060</p>
+            <h3 class="pokemon-name">poliwag</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png"
+                alt="poliwhirl">
+            <p class="pokemon-id">#061</p>
+            <h3 class="pokemon-name">poliwhirl</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png"
+                alt="poliwrath">
+            <p class="pokemon-id">#062</p>
+            <h3 class="pokemon-name">poliwrath</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png"
+                alt="abra">
+            <p class="pokemon-id">#063</p>
+            <h3 class="pokemon-name">abra</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png"
+                alt="kadabra">
+            <p class="pokemon-id">#064</p>
+            <h3 class="pokemon-name">kadabra</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png"
+                alt="alakazam">
+            <p class="pokemon-id">#065</p>
+            <h3 class="pokemon-name">alakazam</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png"
+                alt="machop">
+            <p class="pokemon-id">#066</p>
+            <h3 class="pokemon-name">machop</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png"
+                alt="machoke">
+            <p class="pokemon-id">#067</p>
+            <h3 class="pokemon-name">machoke</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png"
+                alt="machamp">
+            <p class="pokemon-id">#068</p>
+            <h3 class="pokemon-name">machamp</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png"
+                alt="bellsprout">
+            <p class="pokemon-id">#069</p>
+            <h3 class="pokemon-name">bellsprout</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png"
+                alt="weepinbell">
+            <p class="pokemon-id">#070</p>
+            <h3 class="pokemon-name">weepinbell</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+                alt="victreebel">
+            <p class="pokemon-id">#071</p>
+            <h3 class="pokemon-name">victreebel</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png"
+                alt="tentacool">
+            <p class="pokemon-id">#072</p>
+            <h3 class="pokemon-name">tentacool</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png"
+                alt="tentacruel">
+            <p class="pokemon-id">#073</p>
+            <h3 class="pokemon-name">tentacruel</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png"
+                alt="geodude">
+            <p class="pokemon-id">#074</p>
+            <h3 class="pokemon-name">geodude</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png"
+                alt="graveler">
+            <p class="pokemon-id">#075</p>
+            <h3 class="pokemon-name">graveler</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png"
+                alt="golem">
+            <p class="pokemon-id">#076</p>
+            <h3 class="pokemon-name">golem</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
+                alt="ponyta">
+            <p class="pokemon-id">#077</p>
+            <h3 class="pokemon-name">ponyta</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
+                alt="rapidash">
+            <p class="pokemon-id">#078</p>
+            <h3 class="pokemon-name">rapidash</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png"
+                alt="slowpoke">
+            <p class="pokemon-id">#079</p>
+            <h3 class="pokemon-name">slowpoke</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png"
+                alt="slowbro">
+            <p class="pokemon-id">#080</p>
+            <h3 class="pokemon-name">slowbro</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png"
+                alt="magnemite">
+            <p class="pokemon-id">#081</p>
+            <h3 class="pokemon-name">magnemite</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png"
+                alt="magneton">
+            <p class="pokemon-id">#082</p>
+            <h3 class="pokemon-name">magneton</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
+                alt="farfetchd">
+            <p class="pokemon-id">#083</p>
+            <h3 class="pokemon-name">farfetchd</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png"
+                alt="doduo">
+            <p class="pokemon-id">#084</p>
+            <h3 class="pokemon-name">doduo</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png"
+                alt="dodrio">
+            <p class="pokemon-id">#085</p>
+            <h3 class="pokemon-name">dodrio</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png"
+                alt="seel">
+            <p class="pokemon-id">#086</p>
+            <h3 class="pokemon-name">seel</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png"
+                alt="dewgong">
+            <p class="pokemon-id">#087</p>
+            <h3 class="pokemon-name">dewgong</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png"
+                alt="grimer">
+            <p class="pokemon-id">#088</p>
+            <h3 class="pokemon-name">grimer</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png"
+                alt="muk">
+            <p class="pokemon-id">#089</p>
+            <h3 class="pokemon-name">muk</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png"
+                alt="shellder">
+            <p class="pokemon-id">#090</p>
+            <h3 class="pokemon-name">shellder</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png"
+                alt="cloyster">
+            <p class="pokemon-id">#091</p>
+            <h3 class="pokemon-name">cloyster</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+                alt="gastly">
+            <p class="pokemon-id">#092</p>
+            <h3 class="pokemon-name">gastly</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png"
+                alt="haunter">
+            <p class="pokemon-id">#093</p>
+            <h3 class="pokemon-name">haunter</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+                alt="gengar">
+            <p class="pokemon-id">#094</p>
+            <h3 class="pokemon-name">gengar</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png"
+                alt="onix">
+            <p class="pokemon-id">#095</p>
+            <h3 class="pokemon-name">onix</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png"
+                alt="drowzee">
+            <p class="pokemon-id">#096</p>
+            <h3 class="pokemon-name">drowzee</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png"
+                alt="hypno">
+            <p class="pokemon-id">#097</p>
+            <h3 class="pokemon-name">hypno</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png"
+                alt="krabby">
+            <p class="pokemon-id">#098</p>
+            <h3 class="pokemon-name">krabby</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png"
+                alt="kingler">
+            <p class="pokemon-id">#099</p>
+            <h3 class="pokemon-name">kingler</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png"
+                alt="voltorb">
+            <p class="pokemon-id">#100</p>
+            <h3 class="pokemon-name">voltorb</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png"
+                alt="electrode">
+            <p class="pokemon-id">#101</p>
+            <h3 class="pokemon-name">electrode</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png"
+                alt="exeggcute">
+            <p class="pokemon-id">#102</p>
+            <h3 class="pokemon-name">exeggcute</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png"
+                alt="exeggutor">
+            <p class="pokemon-id">#103</p>
+            <h3 class="pokemon-name">exeggutor</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png"
+                alt="cubone">
+            <p class="pokemon-id">#104</p>
+            <h3 class="pokemon-name">cubone</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png"
+                alt="marowak">
+            <p class="pokemon-id">#105</p>
+            <h3 class="pokemon-name">marowak</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png"
+                alt="hitmonlee">
+            <p class="pokemon-id">#106</p>
+            <h3 class="pokemon-name">hitmonlee</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png"
+                alt="hitmonchan">
+            <p class="pokemon-id">#107</p>
+            <h3 class="pokemon-name">hitmonchan</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png"
+                alt="lickitung">
+            <p class="pokemon-id">#108</p>
+            <h3 class="pokemon-name">lickitung</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png"
+                alt="koffing">
+            <p class="pokemon-id">#109</p>
+            <h3 class="pokemon-name">koffing</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png"
+                alt="weezing">
+            <p class="pokemon-id">#110</p>
+            <h3 class="pokemon-name">weezing</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png"
+                alt="rhyhorn">
+            <p class="pokemon-id">#111</p>
+            <h3 class="pokemon-name">rhyhorn</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png"
+                alt="rhydon">
+            <p class="pokemon-id">#112</p>
+            <h3 class="pokemon-name">rhydon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png"
+                alt="chansey">
+            <p class="pokemon-id">#113</p>
+            <h3 class="pokemon-name">chansey</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png"
+                alt="tangela">
+            <p class="pokemon-id">#114</p>
+            <h3 class="pokemon-name">tangela</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png"
+                alt="kangaskhan">
+            <p class="pokemon-id">#115</p>
+            <h3 class="pokemon-name">kangaskhan</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png"
+                alt="horsea">
+            <p class="pokemon-id">#116</p>
+            <h3 class="pokemon-name">horsea</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png"
+                alt="seadra">
+            <p class="pokemon-id">#117</p>
+            <h3 class="pokemon-name">seadra</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
+                alt="goldeen">
+            <p class="pokemon-id">#118</p>
+            <h3 class="pokemon-name">goldeen</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
+                alt="seaking">
+            <p class="pokemon-id">#119</p>
+            <h3 class="pokemon-name">seaking</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
+                alt="staryu">
+            <p class="pokemon-id">#120</p>
+            <h3 class="pokemon-name">staryu</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
+                alt="starmie">
+            <p class="pokemon-id">#121</p>
+            <h3 class="pokemon-name">starmie</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png"
+                alt="mr-mime">
+            <p class="pokemon-id">#122</p>
+            <h3 class="pokemon-name">mr-mime</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png"
+                alt="scyther">
+            <p class="pokemon-id">#123</p>
+            <h3 class="pokemon-name">scyther</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png"
+                alt="jynx">
+            <p class="pokemon-id">#124</p>
+            <h3 class="pokemon-name">jynx</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png"
+                alt="electabuzz">
+            <p class="pokemon-id">#125</p>
+            <h3 class="pokemon-name">electabuzz</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png"
+                alt="magmar">
+            <p class="pokemon-id">#126</p>
+            <h3 class="pokemon-name">magmar</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png"
+                alt="pinsir">
+            <p class="pokemon-id">#127</p>
+            <h3 class="pokemon-name">pinsir</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png"
+                alt="tauros">
+            <p class="pokemon-id">#128</p>
+            <h3 class="pokemon-name">tauros</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png"
+                alt="magikarp">
+            <p class="pokemon-id">#129</p>
+            <h3 class="pokemon-name">magikarp</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+                alt="gyarados">
+            <p class="pokemon-id">#130</p>
+            <h3 class="pokemon-name">gyarados</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+                alt="lapras">
+            <p class="pokemon-id">#131</p>
+            <h3 class="pokemon-name">lapras</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+                alt="ditto">
+            <p class="pokemon-id">#132</p>
+            <h3 class="pokemon-name">ditto</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
+                alt="eevee">
+            <p class="pokemon-id">#133</p>
+            <h3 class="pokemon-name">eevee</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+                alt="vaporeon">
+            <p class="pokemon-id">#134</p>
+            <h3 class="pokemon-name">vaporeon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
+                alt="jolteon">
+            <p class="pokemon-id">#135</p>
+            <h3 class="pokemon-name">jolteon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
+                alt="flareon">
+            <p class="pokemon-id">#136</p>
+            <h3 class="pokemon-name">flareon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png"
+                alt="porygon">
+            <p class="pokemon-id">#137</p>
+            <h3 class="pokemon-name">porygon</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png"
+                alt="omanyte">
+            <p class="pokemon-id">#138</p>
+            <h3 class="pokemon-name">omanyte</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png"
+                alt="omastar">
+            <p class="pokemon-id">#139</p>
+            <h3 class="pokemon-name">omastar</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png"
+                alt="kabuto">
+            <p class="pokemon-id">#140</p>
+            <h3 class="pokemon-name">kabuto</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png"
+                alt="kabutops">
+            <p class="pokemon-id">#141</p>
+            <h3 class="pokemon-name">kabutops</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png"
+                alt="aerodactyl">
+            <p class="pokemon-id">#142</p>
+            <h3 class="pokemon-name">aerodactyl</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+                alt="snorlax">
+            <p class="pokemon-id">#143</p>
+            <h3 class="pokemon-name">snorlax</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
+                alt="articuno">
+            <p class="pokemon-id">#144</p>
+            <h3 class="pokemon-name">articuno</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+                alt="zapdos">
+            <p class="pokemon-id">#145</p>
+            <h3 class="pokemon-name">zapdos</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
+                alt="moltres">
+            <p class="pokemon-id">#146</p>
+            <h3 class="pokemon-name">moltres</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+                alt="dratini">
+            <p class="pokemon-id">#147</p>
+            <h3 class="pokemon-name">dratini</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+                alt="dragonair">
+            <p class="pokemon-id">#148</p>
+            <h3 class="pokemon-name">dragonair</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+                alt="dragonite">
+            <p class="pokemon-id">#149</p>
+            <h3 class="pokemon-name">dragonite</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+                alt="mewtwo">
+            <p class="pokemon-id">#150</p>
+            <h3 class="pokemon-name">mewtwo</h3>
+        </div>
+        <div class="pokemon-card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+                alt="mew">
+            <p class="pokemon-id">#151</p>
+            <h3 class="pokemon-name">mew</h3>
+        </div>
+    </main>
+
+
+    <script src="server.js"></script>
+</body>
+
+
+</html>
+
